@@ -15,4 +15,4 @@ while($fila =$db->sql_fetchrow($consulta)){
   print_r($fila);
 };
 $db->sql_close();
-return($fila);
+
