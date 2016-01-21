@@ -16,3 +16,19 @@ while($fila =$db->sql_fetchrow($consulta)){
 };
 $db->sql_close();
 
+
+
+//Retorna un vector que contiene vectores y cada vector contenido corresponde a un afila de los resultados.
+function obtenerTerceros($centro) {
+  $db = new MySQL();
+  $sql = "SELECT * FROM `rondas`.`personal` WHERE `centro`='" . $centro . "';";
+  $consulta = $db->sql_query($sql);
+  while($row = $db->sql_fetchrow($consulta)){
+    array_push($rows, $row);
+  }
+  $db->sql_close();
+  return($rows);
+}
+      
+      
+      
