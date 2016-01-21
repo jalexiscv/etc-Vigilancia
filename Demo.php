@@ -30,5 +30,9 @@ function obtenerTerceros($centro) {
   return($rows);
 }
       
-      
+print_r(obtenerTerceros("????")); 
+//si es una funcion sola
+//si esta en una clase seria
+print_r($clase->obtenerTerceros("????")); 
+
       
